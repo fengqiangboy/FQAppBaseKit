@@ -13,6 +13,7 @@
 		075F19B71DC085A800BAC6A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F19B51DC085A800BAC6A8 /* Main.storyboard */; };
 		075F19B91DC085A800BAC6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075F19B81DC085A800BAC6A8 /* Assets.xcassets */; };
 		075F19BC1DC085A800BAC6A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F19BA1DC085A800BAC6A8 /* LaunchScreen.storyboard */; };
+		075F19C61DC0873D00BAC6A8 /* FQAppEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		075F19B81DC085A800BAC6A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		075F19BB1DC085A800BAC6A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		075F19BD1DC085A800BAC6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075F19C41DC0873D00BAC6A8 /* FQAppEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQAppEnvironment.h; sourceTree = "<group>"; };
+		075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQAppEnvironment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		075F19AB1DC085A800BAC6A8 /* FQAppBaseKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				075F19C31DC086EF00BAC6A8 /* FQAppBaseKit */,
 				075F19AF1DC085A800BAC6A8 /* AppDelegate.h */,
 				075F19B01DC085A800BAC6A8 /* AppDelegate.m */,
 				075F19B21DC085A800BAC6A8 /* ViewController.h */,
@@ -77,6 +81,16 @@
 				075F19AD1DC085A800BAC6A8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		075F19C31DC086EF00BAC6A8 /* FQAppBaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				075F19C41DC0873D00BAC6A8 /* FQAppEnvironment.h */,
+				075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */,
+			);
+			name = FQAppBaseKit;
+			path = ../../FQAppBaseKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +167,7 @@
 			files = (
 				075F19B41DC085A800BAC6A8 /* ViewController.m in Sources */,
 				075F19B11DC085A800BAC6A8 /* AppDelegate.m in Sources */,
+				075F19C61DC0873D00BAC6A8 /* FQAppEnvironment.m in Sources */,
 				075F19AE1DC085A800BAC6A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
