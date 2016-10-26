@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  FQBaseAppDelegate.h
 //  FQAppBaseKitDemo
 //
 //  Created by 奉强 on 16/10/26.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FQBaseAppDelegate.h"
 
-@interface AppDelegate : FQBaseAppDelegate
+@interface FQBaseAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
 @end
-

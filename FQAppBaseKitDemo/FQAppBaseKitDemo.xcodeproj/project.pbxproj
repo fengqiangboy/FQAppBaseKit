@@ -14,6 +14,9 @@
 		075F19B91DC085A800BAC6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075F19B81DC085A800BAC6A8 /* Assets.xcassets */; };
 		075F19BC1DC085A800BAC6A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F19BA1DC085A800BAC6A8 /* LaunchScreen.storyboard */; };
 		075F19C61DC0873D00BAC6A8 /* FQAppEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */; };
+		075F19C91DC08E0100BAC6A8 /* FQBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19C81DC08E0100BAC6A8 /* FQBaseAppDelegate.m */; };
+		075F19CB1DC08FDB00BAC6A8 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075F19CA1DC08FDB00BAC6A8 /* config.plist */; };
+		075F19CE1DC0914200BAC6A8 /* AppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		075F19BD1DC085A800BAC6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075F19C41DC0873D00BAC6A8 /* FQAppEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQAppEnvironment.h; sourceTree = "<group>"; };
 		075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQAppEnvironment.m; sourceTree = "<group>"; };
+		075F19C71DC08E0100BAC6A8 /* FQBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseAppDelegate.h; sourceTree = "<group>"; };
+		075F19C81DC08E0100BAC6A8 /* FQBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQBaseAppDelegate.m; sourceTree = "<group>"; };
+		075F19CA1DC08FDB00BAC6A8 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		075F19CC1DC0914200BAC6A8 /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
+		075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 				075F19B01DC085A800BAC6A8 /* AppDelegate.m */,
 				075F19B21DC085A800BAC6A8 /* ViewController.h */,
 				075F19B31DC085A800BAC6A8 /* ViewController.m */,
+				075F19CA1DC08FDB00BAC6A8 /* config.plist */,
 				075F19B51DC085A800BAC6A8 /* Main.storyboard */,
 				075F19B81DC085A800BAC6A8 /* Assets.xcassets */,
 				075F19BA1DC085A800BAC6A8 /* LaunchScreen.storyboard */,
@@ -88,6 +97,10 @@
 			children = (
 				075F19C41DC0873D00BAC6A8 /* FQAppEnvironment.h */,
 				075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */,
+				075F19C71DC08E0100BAC6A8 /* FQBaseAppDelegate.h */,
+				075F19C81DC08E0100BAC6A8 /* FQBaseAppDelegate.m */,
+				075F19CC1DC0914200BAC6A8 /* AppConfiguration.h */,
+				075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */,
 			);
 			name = FQAppBaseKit;
 			path = ../../FQAppBaseKit;
@@ -152,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075F19CB1DC08FDB00BAC6A8 /* config.plist in Resources */,
 				075F19BC1DC085A800BAC6A8 /* LaunchScreen.storyboard in Resources */,
 				075F19B91DC085A800BAC6A8 /* Assets.xcassets in Resources */,
 				075F19B71DC085A800BAC6A8 /* Main.storyboard in Resources */,
@@ -169,6 +183,8 @@
 				075F19B11DC085A800BAC6A8 /* AppDelegate.m in Sources */,
 				075F19C61DC0873D00BAC6A8 /* FQAppEnvironment.m in Sources */,
 				075F19AE1DC085A800BAC6A8 /* main.m in Sources */,
+				075F19CE1DC0914200BAC6A8 /* AppConfiguration.m in Sources */,
+				075F19C91DC08E0100BAC6A8 /* FQBaseAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
