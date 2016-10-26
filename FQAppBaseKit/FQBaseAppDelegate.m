@@ -7,12 +7,13 @@
 //
 
 #import "FQBaseAppDelegate.h"
+#import "AppConfiguration.h"
 
 @implementation FQBaseAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [[AppConfiguration sharedConfig] loadConfig:@"config.plist"];
     return YES;
 }
 
