@@ -7,6 +7,7 @@
 //
 
 #import "AppConfiguration.h"
+#import "FQAppLifeCycleItem.h"
 
 NSString * const kLifeCycleDidFinishLaunchingWithOptions = @"didFinishLaunchingWithOptions";
 NSString * const kLifeCycleDidEnterBackground = @"didEnterBackground";
@@ -15,6 +16,9 @@ NSString * const kLifeCycleDidBecomeActive = @"didBecomeActive";
 NSString * const kLifeCycleRemoteNotification = @"remoteNotification";
 NSString * const kLifeCycleWillTerminate = @"willTerminate";
 NSString * const kLifeCycleOpenURL = @"openURL";
+
+NSString * const kConfigKeyLifeCycle = @"lifecycle";
+NSString * const kConfigKeyCustom = @"custom";
 
 @implementation AppConfiguration
 
@@ -40,6 +44,15 @@ static AppConfiguration *_instance;
     return _instance;
 }
 
+#pragma mark - Get
+- (NSMutableDictionary *)lifeCycleConfig {
+    if (!_lifeCycleConfig) {
+        _lifeCycleConfig = @{}.mutableCopy;
+    }
+    
+    return _lifeCycleConfig;
+}
+
 #pragma mark - Config
 - (void)loadConfig:(NSString *)configFileName {
     NSMutableArray *components = [configFileName componentsSeparatedByString:@"."].mutableCopy;
@@ -49,8 +62,49 @@ static AppConfiguration *_instance;
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:type];
     if (path != nil) {
         NSDictionary <NSString *, id>*configDic = [NSDictionary dictionaryWithContentsOfFile:path];
-        NSLog(@"%@", configDic);
+        if (configDic != nil) {
+            [self loadConfigDic:configDic];
+        }
     }
+}
+
+- (void)loadConfigDic:(NSDictionary <NSString *, id>*)configDic {
+    NSDictionary <NSString *, id>*lifeCycleDic = [configDic objectForKey:kConfigKeyLifeCycle];
+    NSDictionary <NSString *, id>*customDic = [configDic objectForKey:kConfigKeyCustom];
+    if (lifeCycleDic != nil) {
+        [self loadLifeCycleDic:lifeCycleDic];
+    }
+    
+    if (customDic != nil) {
+        [self loadCustomConfig:customDic];
+    }
+    
+}
+
+- (void)loadLifeCycleDic:(NSDictionary <NSString *, id>*)lifeCycleDic {
+    
+    
+    [lifeCycleDic enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSArray * itemArray, BOOL * _Nonnull stop) {
+        
+        NSMutableArray <FQAppLifeCycleItem *>*items = @[].mutableCopy;
+        
+        [itemArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            FQAppLifeCycleItem *item = [[FQAppLifeCycleItem alloc] initWithDictionary:obj];
+            if (item != nil) {
+                [items addObject:item];
+            }
+            
+            NSLog(@"load config: key: %@ items: %@", key, items);
+        }];
+        
+        [self.lifeCycleConfig setObject:items forKey:key];
+    }];
+    
+    
+}
+
+- (void)loadCustomConfig:(NSDictionary <NSString *, id>*)lifeCycleDic {
+    
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FQAppLifeCycleItem.h"
 
 
 FOUNDATION_EXPORT NSString * const kLifeCycleDidFinishLaunchingWithOptions;
@@ -17,7 +18,12 @@ FOUNDATION_EXPORT NSString * const kLifeCycleRemoteNotification;
 FOUNDATION_EXPORT NSString * const kLifeCycleWillTerminate;
 FOUNDATION_EXPORT NSString * const kLifeCycleOpenURL;
 
+FOUNDATION_EXPORT NSString * const kConfigKeyLifeCycle;
+FOUNDATION_EXPORT NSString * const kConfigKeyCustom;
+
 @interface AppConfiguration : NSObject
+
+@property (nonatomic, strong) NSMutableDictionary <NSString *, NSArray *>*lifeCycleConfig;
 
 + (instancetype)sharedConfig;
 

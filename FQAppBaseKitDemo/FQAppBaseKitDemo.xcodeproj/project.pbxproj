@@ -17,6 +17,9 @@
 		075F19C91DC08E0100BAC6A8 /* FQBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19C81DC08E0100BAC6A8 /* FQBaseAppDelegate.m */; };
 		075F19CB1DC08FDB00BAC6A8 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075F19CA1DC08FDB00BAC6A8 /* config.plist */; };
 		075F19CE1DC0914200BAC6A8 /* AppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */; };
+		07B4841C1DC1E90200A95B74 /* FQAppLifeCycleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B4841B1DC1E90200A95B74 /* FQAppLifeCycleItem.m */; };
+		07B4841F1DC1E9FE00A95B74 /* OBJCObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B4841E1DC1E9FE00A95B74 /* OBJCObjectFactory.m */; };
+		07B484221DC1EF0300A95B74 /* UrlHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B484211DC1EF0300A95B74 /* UrlHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		075F19CA1DC08FDB00BAC6A8 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		075F19CC1DC0914200BAC6A8 /* AppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfiguration.h; sourceTree = "<group>"; };
 		075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfiguration.m; sourceTree = "<group>"; };
+		07B4841A1DC1E90200A95B74 /* FQAppLifeCycleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQAppLifeCycleItem.h; sourceTree = "<group>"; };
+		07B4841B1DC1E90200A95B74 /* FQAppLifeCycleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQAppLifeCycleItem.m; sourceTree = "<group>"; };
+		07B4841D1DC1E9FE00A95B74 /* OBJCObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJCObjectFactory.h; sourceTree = "<group>"; };
+		07B4841E1DC1E9FE00A95B74 /* OBJCObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJCObjectFactory.m; sourceTree = "<group>"; };
+		07B484201DC1EF0300A95B74 /* UrlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlHandler.h; sourceTree = "<group>"; };
+		07B484211DC1EF0300A95B74 /* UrlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,8 @@
 				075F19BA1DC085A800BAC6A8 /* LaunchScreen.storyboard */,
 				075F19BD1DC085A800BAC6A8 /* Info.plist */,
 				075F19AC1DC085A800BAC6A8 /* Supporting Files */,
+				07B484201DC1EF0300A95B74 /* UrlHandler.h */,
+				07B484211DC1EF0300A95B74 /* UrlHandler.m */,
 			);
 			path = FQAppBaseKitDemo;
 			sourceTree = "<group>";
@@ -95,12 +106,16 @@
 		075F19C31DC086EF00BAC6A8 /* FQAppBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				07B4841D1DC1E9FE00A95B74 /* OBJCObjectFactory.h */,
+				07B4841E1DC1E9FE00A95B74 /* OBJCObjectFactory.m */,
 				075F19C41DC0873D00BAC6A8 /* FQAppEnvironment.h */,
 				075F19C51DC0873D00BAC6A8 /* FQAppEnvironment.m */,
 				075F19C71DC08E0100BAC6A8 /* FQBaseAppDelegate.h */,
 				075F19C81DC08E0100BAC6A8 /* FQBaseAppDelegate.m */,
 				075F19CC1DC0914200BAC6A8 /* AppConfiguration.h */,
 				075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */,
+				07B4841A1DC1E90200A95B74 /* FQAppLifeCycleItem.h */,
+				07B4841B1DC1E90200A95B74 /* FQAppLifeCycleItem.m */,
 			);
 			name = FQAppBaseKit;
 			path = ../../FQAppBaseKit;
@@ -137,7 +152,7 @@
 				TargetAttributes = {
 					075F19A81DC085A800BAC6A8 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CWS5QZG6VE;
+						DevelopmentTeam = DEX5M83J3C;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -180,8 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				075F19B41DC085A800BAC6A8 /* ViewController.m in Sources */,
+				07B4841C1DC1E90200A95B74 /* FQAppLifeCycleItem.m in Sources */,
 				075F19B11DC085A800BAC6A8 /* AppDelegate.m in Sources */,
+				07B4841F1DC1E9FE00A95B74 /* OBJCObjectFactory.m in Sources */,
 				075F19C61DC0873D00BAC6A8 /* FQAppEnvironment.m in Sources */,
+				07B484221DC1EF0300A95B74 /* UrlHandler.m in Sources */,
 				075F19AE1DC085A800BAC6A8 /* main.m in Sources */,
 				075F19CE1DC0914200BAC6A8 /* AppConfiguration.m in Sources */,
 				075F19C91DC08E0100BAC6A8 /* FQBaseAppDelegate.m in Sources */,
@@ -302,11 +320,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWS5QZG6VE;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DEX5M83J3C;
 				INFOPLIST_FILE = FQAppBaseKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengqiangboy.FQAppBaseKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengqiangboy.FQAppBaseKitDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -315,11 +334,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWS5QZG6VE;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DEX5M83J3C;
 				INFOPLIST_FILE = FQAppBaseKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fengqiangboy.FQAppBaseKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fengqiangboy.FQAppBaseKitDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -343,6 +363,7 @@
 				075F19C21DC085A800BAC6A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
