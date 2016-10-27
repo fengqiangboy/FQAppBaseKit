@@ -46,6 +46,7 @@
 		07B4841E1DC1E9FE00A95B74 /* OBJCObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJCObjectFactory.m; sourceTree = "<group>"; };
 		07B484201DC1EF0300A95B74 /* UrlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlHandler.h; sourceTree = "<group>"; };
 		07B484211DC1EF0300A95B74 /* UrlHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlHandler.m; sourceTree = "<group>"; };
+		07B484231DC1F88200A95B74 /* FQAppBaseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQAppBaseKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 				075F19CD1DC0914200BAC6A8 /* AppConfiguration.m */,
 				07B4841A1DC1E90200A95B74 /* FQAppLifeCycleItem.h */,
 				07B4841B1DC1E90200A95B74 /* FQAppLifeCycleItem.m */,
+				07B484231DC1F88200A95B74 /* FQAppBaseKit.h */,
 			);
 			name = FQAppBaseKit;
 			path = ../../FQAppBaseKit;

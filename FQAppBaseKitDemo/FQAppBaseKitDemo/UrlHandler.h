@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FQAppLifeCycleItem.h"
+#import "FQAppBaseKit.h"
 
 @interface UrlHandler : NSObject<FQAppLifeCycleProtocol>
 
