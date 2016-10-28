@@ -91,10 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FQAppBaseKit", "FQAppBaseKit/**/*.{h,m}"
+  s.source_files  = "FQAppBaseKit/*.{h,m}", "FQAppBaseKit/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "FQAppBaseKit/FQAppBaseKit.h"
+  # s.public_header_files = "FQAppBaseKit/FQAppBaseKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
